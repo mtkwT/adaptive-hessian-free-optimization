@@ -5,7 +5,7 @@
 <!-- <img src="figure/train_loss.png" alt="train_loss" title="train_loss" width="300" height="214">
 <img src="figure/test_accuracy.png" alt="test_acc" title="test_acc" width="300" height="214"> -->
 ![train_loss](figure/train_loss.png)
-![test_acc](figure/test_acc.png)
+![test_acc](figure/test_accuracy.png)
 
 ## Required
 - Docker version 19.03.2
