@@ -1,6 +1,10 @@
 # Adaptive Hessian-free Optimization
 - Adaptive Hessian-free optimization for training neural networks
   - NeurIPS Workshop on OPT2020: 12th Annual Workshop on Optimization for Machine Learning
+
+![Block](figure/train_loss.pdf)
+![Block](figure/test_accuracy.pdf)
+
 ## Required
 - Docker version 19.03.2
 - docker-compose version 1.24.1
