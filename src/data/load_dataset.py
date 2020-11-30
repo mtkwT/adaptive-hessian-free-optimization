@@ -6,10 +6,9 @@ from keras.utils import np_utils
 from sklearn.model_selection import train_test_split
 
 # データロード
-class load_data():
+class DataLoader():
     
     def __init__(self, random_state=42):
-        
         self.random_state = random_state
 
     def load_mnist(self):
@@ -71,28 +70,28 @@ class load_data():
         return train_X, test_X, train_y, test_y
 
 if __name__ == "__main__":
-    train_X, test_X, train_y, test_y = load_data.load_mnist()
+    train_X, test_X, train_y, test_y = DataLoader().load_mnist()
     print(train_X.shape)
     print(test_X.shape)
     print(train_y.shape)
     print(test_y.shape)
     print()
 
-    train_X, test_X, train_y, test_y = load_data.load_fashion_mnist()
+    train_X, test_X, train_y, test_y = DataLoader().load_fashion_mnist()
     print(train_X.shape)
     print(test_X.shape)
     print(train_y.shape)
     print(test_y.shape)
     print()
 
-    train_X, test_X, train_y, test_y = load_data.load_cifar10()
+    train_X, test_X, train_y, test_y = DataLoader().load_cifar10()
     print(train_X.shape)
     print(test_X.shape)
     print(train_y.shape)
     print(test_y.shape)
     print()
 
-    train_X, test_X, train_y, test_y = load_data.load_cifar100()
+    train_X, test_X, train_y, test_y = DataLoader().load_cifar100()
     print(train_X.shape)
     print(test_X.shape)
     print(train_y.shape)

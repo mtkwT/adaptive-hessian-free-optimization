@@ -15,7 +15,7 @@ from tqdm import tqdm
 
 sys.path.append('/code/adaptive-hessian-free-optimization/')
 from src.optimizer.hfoptimizer_adam import AdaptiveHessianFreeOptimizer
-from src.data.load_dataset import load_data
+from src.data.load_dataset import DataLoader
 from src.models import build_model
 
 def reset_graph(seed):
@@ -54,8 +54,8 @@ def main():
     ###############################################################################
     # load data and serup model
     ###############################################################################
-    dataloader = load_data()
-    train_X, test_X, train_y, test_y = load_data().load_cifar10()
+    dataloader = DataLoader()
+    train_X, test_X, train_y, test_y = DataLoader().load_cifar10()
 
     n_batches  = train_X.shape[0] // args.batch_size
     batch_loesses = []
@@ -180,6 +180,6 @@ if __name__ == "__main__":
         'cg_L_smoothness': args.cg_L_smoothness,
     }
     exp_name = time.strftime('%Y%m%d-%H%M%S') + 'hf-adam'
-    wandb.init(config=hyperparams, project=f'cifar10-{args.arch}-hf-experiment', entity='mtkwt', name=exp_name)
+    # wandb.init(config=hyperparams, project=f'cifar10-{args.arch}-hf-experiment', entity='mtkwt', name=exp_name)
 
     main()
