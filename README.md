@@ -3,8 +3,8 @@
   - NeurIPS Workshop on OPT2020: 12th Annual Workshop on Optimization for Machine Learning
 
 <p float="left">
-  <img src="figure/train_loss.png" width="450" height="321">
-  <img src="figure/test_accuracy.png" width="450" height="321">
+  <img src="figure/train_loss.png" width="400" height="286">
+  <img src="figure/test_accuracy.png" width="400" height="286">
 </p>
 <!-- ![train_loss](figure/train_loss.png)
 ![test_acc](figure/test_accuracy.png) -->
