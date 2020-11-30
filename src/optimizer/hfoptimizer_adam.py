@@ -1,4 +1,4 @@
-""" Hessian Free Optimizer """
+""" Adaptive Hessian Free Optimizer """
 
 import sys
 import numpy as np
@@ -407,8 +407,6 @@ class AdaptiveHessianFreeOptimizer(object):
 
     return Hv
 
-  # def __calculate_Hessian_eigenvalue():
-
   def __Gv(self, vec):
     """ Computes the product G by vec = JHJv (G is the Gauss-Newton matrix).
 
@@ -477,8 +475,7 @@ class AdaptiveHessianFreeOptimizer(object):
 
   def __calc_lr_numerator(self):
     """
-    手塚先生のHF_Adamのlrの解析に基づく動的にlrを求める
-    tf.Tensorが関係する分子部分のみ求める
+    Dynamically calculate lr_numerator based on convergence analysis of Adaptive-HF.
     \alpha_t = 4(||g_t||^2 (1 - \beta_1) - ||g_t||(\beta_1 - \beta_1^t) \sigma)
     """
     numerator = 4 * (
