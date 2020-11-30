@@ -10,8 +10,8 @@
 ![test_acc](figure/test_accuracy.png) -->
 
 ## Required
-- Docker version 19.03.2
-- docker-compose version 1.24.1
+- Docker version >= 19.03.2
+- docker-compose version >= 1.24.1
 ## Set up
 #### Build container
 ```bash
