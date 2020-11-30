@@ -144,7 +144,7 @@ class AdaptiveHessianFreeOptimizer(object):
     """ Network weights. """
     self.W = tf.trainable_variables()
     
-    self.iterations = 0
+    self.iterations = 1
     
     self.moments = [] # addtion
     for w in self.W:
@@ -500,6 +500,9 @@ class AdaptiveHessianFreeOptimizer(object):
   
       ms_t = self.beta1 * ms + (1 - self.beta1) * delta
       vs_t = self.beta2 * vs + (1 - self.beta2) * tf.square(delta)
+
+      ms_t /= (1 - self.beta1**self.iterations)
+      vs_t /= (1 - self.beta2**self.iterations)
       
       if self.amsgrad:
         vhat_t = tf.maximum(vhat, vs_t)
