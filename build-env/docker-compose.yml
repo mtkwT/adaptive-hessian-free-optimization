@@ -1,0 +1,7 @@
+version: '2.3'
+services:
+  adaptive-hf:
+    build: .
+    volumes:
+      - ~/adaptive-hessian-free-optimization/:/code/adaptive-hessian-free-optimization/
+    runtime: nvidia
