@@ -1,4 +1,7 @@
-""" Adaptive Hessian Free Optimizer """
+"""
+- Adaptive Hessian Free Optimizer (Motokawa+, 2020)
+- with reference to https://github.com/moonl1ght/HessianFreeOptimization
+"""
 
 import sys
 import numpy as np
