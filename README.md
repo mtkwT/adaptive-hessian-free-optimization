@@ -1,6 +1,8 @@
 # Adaptive Hessian-free Optimization
 - Adaptive Hessian-free optimization for training neural networks
   - NeurIPS Workshop on OPT2020: 12th Annual Workshop on Optimization for Machine Learning
+- paper: https://opt-ml.org/papers/2020/paper_43.pdf
+- poster: https://opt-ml.org/posters/2020/poster_43.png
 
 <p float="left">
   <img src="figure/train_loss.png" width="400" height="286">
