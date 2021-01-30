@@ -4,10 +4,6 @@
 - paper: https://opt-ml.org/papers/2020/paper_43.pdf
 - poster: https://opt-ml.org/posters/2020/poster_43.png
 
-<p float="left">
-  <img src="figure/train_loss.png" width="400" height="286">
-  <img src="figure/test_accuracy.png" width="400" height="286">
-</p>
 <!-- ![train_loss](figure/train_loss.png)
 ![test_acc](figure/test_accuracy.png) -->
 
@@ -44,3 +40,8 @@ The following three parametes are the unique hyperparameters of Adaptive-HF.
 - --cg-sigma: the upper bound of the conjugate gradients, default is 50.
 - --cg-L-smoothness: the lower bound of L-smoothness, default is 100.
 
+## Comparison between Original-HF and Adaptive-HF
+<p float="left">
+  <img src="figure/train_loss.png" width="400" height="286">
+  <img src="figure/test_accuracy.png" width="400" height="286">
+</p>
